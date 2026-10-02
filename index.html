@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="main.js" defer></script>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/1.0.4/awesome-bootstrap-checkbox.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+ 
+</head>
+
+<body>
+
+    <header class="head">
+    <button id="btn.menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+        
+         <div class="overlay" id="overlay"></div>
+    <aside class="Menu" id="menu">
+        <div class="menu-header">
+            <p>Menu</p>
+            <button class="btn-close" id="btn.close">x</button>
+        </div>
+        <button><i class="fa-solid fa-bars"></i>Home</button>
+    </aside>
+
+        <div class="header-center">
+            <img src="logo.png" alt="YouTube Logo" class="youtube-logo">
+            <form class="search-bar">
+                <input class="search-input" type="search" placeholder="Pesquisar" aria-label="Pesquisar" />
+                <button type="submit" class="search-btn">
+                    <img src="lupa.png" class="search-icon" alt="Pesquisar">
+                </button>
+            </form>
+
+            <a href="#" title="Pesquisa por voz" class="mic-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                    <line x1="12" y1="19" x2="12" y2="23"></line>
+                    <line x1="8" y1="23" x2="16" y2="23"></line>
+                </svg>
+            </a>
+        </div>
+
+        <div class="menu-icons">
+            <a href="#" title="Criar" class="create-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                Criar
+            </a>
+
+            <a href="#" title="Notificações">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                </svg>
+            </a>
+
+            <a href="#">
+                <img class="menu-chanel-icon" src="icon.jpg" alt="perfil">
+            </a>
+        </div>
+    </header>
+
+    <div class="categories">
+        <section class="category-section">
+            <button class="category active">Tudo</button>
+            <button class="category">Música</button>
+            <button class="category">Tutoriais</button>
+            <button class="category">Podcasts</button>
+            <button class="category">Jogos</button>
+            <button class="category">RPG</button>
+            <button class="category">Ao Vivo</button>
+            <button class="category">Mixes</button>
+            <button class="category">Assistidos</button>
+            <button class="category">Novidades</button>
+        </section>
+    </div>
+
+    <div class="videos">
+        <section class="video-section">
+
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="12:24">
+                    <img class="thumbnail-image" src="https://i.ytimg.com/vi/1xi6io3wC2M/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLASf01tZrA2cQU7R2Y1rL34xaKp1g" alt="">
+                </a>
+
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon" src="https://yt3.googleusercontent.com/YonaArf25X4dPriPPoljIGRxe9sSX3VJTAFkD5PmJypJGsgz0H9VZWwhfsAGlp_SaFUHKJLglw=s160-c-k-c0x00ffffff-no-rj" alt="">
+                    </a>
+                
+                    <div class="video-details">
+                        <a href="#" class="video-title">Bloom in your own time, just keep growing.</a>
+                        <a href="#" class="video-channel-name">roti.</a>
+
+                        <div class="video-visu">
+                            <span>7,4 mil visualizações</span>
+                            • 
+                            <span>há 2 dias</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="01:00:00">
+                    <img class="thumbnail-image" src="https://i.ytimg.com/vi/V-QfhRQTC6w/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDYlKYUj9jIloDKNVwWB_Y66c-p1Q" alt="">
+                </a>
+
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon" src="https://yt3.googleusercontent.com/YonaArf25X4dPriPPoljIGRxe9sSX3VJTAFkD5PmJypJGsgz0H9VZWwhfsAGlp_SaFUHKJLglw=s160-c-k-c0x00ffffff-no-rj" alt="">
+                    </a>
+                
+                    <div class="video-details">
+                        <a href="#" class="video-title">Let’s just start with what we can do today.</a>
+                        <a href="#" class="video-channel-name">roti.</a>
+
+                        <div class="video-visu">
+                            <span>190 mil visualizações</span>
+                            • 
+                            <span>há 3 dias</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="01:00:00">
+                    <img class="thumbnail-image" src="https://i.ytimg.com/vi/_XZxjgSxn7U/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBp_r2ROnzYGuJukTdketMtTJSkEg" alt="">
+                </a>
+
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon" src="https://yt3.googleusercontent.com/YonaArf25X4dPriPPoljIGRxe9sSX3VJTAFkD5PmJypJGsgz0H9VZWwhfsAGlp_SaFUHKJLglw=s160-c-k-c0x00ffffff-no-rj" alt="">
+                    </a>
+                
+                    <div class="video-details">
+                        <a href="#" class="video-title">Let's make today a day to be proud of.</a>
+                        <a href="#" class="video-channel-name">roti.</a>
+
+                        <div class="video-visu">
+                            <span>50 mil visualizações</span>
+                            • 
+                            <span>há 4 dias</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="01:00:00">
+                    <img class="thumbnail-image" src="https://i.ytimg.com/vi/kbw51Vbhef8/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAfAf1Zmcgw439lJy1KFo5AmYvzfw" alt="">
+                </a>
+
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon" src="https://yt3.googleusercontent.com/YonaArf25X4dPriPPoljIGRxe9sSX3VJTAFkD5PmJypJGsgz0H9VZWwhfsAGlp_SaFUHKJLglw=s160-c-k-c0x00ffffff-no-rj" alt="">
+                    </a>
+                
+                    <div class="video-details">
+                        <a href="#" class="video-title">There is no growth without action.</a>
+                        <a href="#" class="video-channel-name">roti.</a>
+
+                        <div class="video-visu">
+                            <span>38 mil visualizações</span>
+                            • 
+                            <span>há 5 dias</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="01:00:00">
+                    <img class="thumbnail-image" src="https://i.ytimg.com/vi/b9C9aGG20zM/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLD7WkBDz36NPGyQQNzU7-Tn2OyfEA" alt="">
+                </a>
+
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon" src="https://yt3.googleusercontent.com/YonaArf25X4dPriPPoljIGRxe9sSX3VJTAFkD5PmJypJGsgz0H9VZWwhfsAGlp_SaFUHKJLglw=s160-c-k-c0x00ffffff-no-rj" alt="">
+                    </a>
+                
+                    <div class="video-details">
+                        <a href="#" class="video-title">Rest is part of the work.</a>
+                        <a href="#" class="video-channel-name">roti.</a>
+
+                        <div class="video-visu">
+                            <span>47 mil visualizações</span>
+                            • 
+                            <span>há 6 dias</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="01:00:00">
+                    <img class="thumbnail-image" src="https://i.ytimg.com/vi/hNwK1WhA2cQ/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBEHuqA4YfmOAUUlbeTYBRkCq_cVA" alt="">
+                </a>
+
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon" src="https://yt3.googleusercontent.com/YonaArf25X4dPriPPoljIGRxe9sSX3VJTAFkD5PmJypJGsgz0H9VZWwhfsAGlp_SaFUHKJLglw=s160-c-k-c0x00ffffff-no-rj" alt="">
+                    </a>
+                
+                    <div class="video-details">
+                        <a href="#" class="video-title">Let's make progress at our own pace today.</a>
+                        <a href="#" class="video-channel-name">roti.</a>
+
+                        <div class="video-visu">
+                            <span>18 mil visualizações</span>
+                            • 
+                            <span>há 7 dias</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="01:00:00">
+                    <img class="thumbnail-image" src="https://i.ytimg.com/vi/UvPBIrgUxBY/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCV8OGR1pLklq1ATwULzZHeNk9gGA" alt="">
+                </a>
+
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon" src="https://yt3.googleusercontent.com/YonaArf25X4dPriPPoljIGRxe9sSX3VJTAFkD5PmJypJGsgz0H9VZWwhfsAGlp_SaFUHKJLglw=s160-c-k-c0x00ffffff-no-rj" alt="">
+                    </a>
+                
+                    <div class="video-details">
+                        <a href="#" class="video-title">You can do it. Keep moving forward today.</a>
+                        <a href="#" class="video-channel-name">roti.</a>
+
+                        <div class="video-visu">
+                            <span>8,5 mil visualizações</span>
+                            • 
+                            <span>há 8 dias</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="01:00:00">
+                    <img class="thumbnail-image" src="https://i.ytimg.com/vi/UIvFq1jXtW0/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCa7CC4HgeShWik8fQQ8mBoCocnZw" alt="">
+                </a>
+
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon" src="https://yt3.googleusercontent.com/YonaArf25X4dPriPPoljIGRxe9sSX3VJTAFkD5PmJypJGsgz0H9VZWwhfsAGlp_SaFUHKJLglw=s160-c-k-c0x00ffffff-no-rj" alt="">
+                    </a>
+                
+                    <div class="video-details">
+                        <a href="#" class="video-title">Better days are coming. Let's keep moving forward.</a>
+                        <a href="#" class="video-channel-name">roti.</a>
+
+                        <div class="video-visu">
+                            <span>13 mil visualizações</span>
+                            • 
+                            <span>há 9 dias</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </div>
+</body>
+</html>
